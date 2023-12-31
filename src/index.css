@@ -19,6 +19,12 @@
   --font-color-secondary: #A1A1A1;
 
   background-color: var(--background-color);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  
+}
+:root::-webkit-scrollbar {
+  display: none; /* WebKit browsers (Chrome, Safari, etc.) */
 }
 
 .h3{

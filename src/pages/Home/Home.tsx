@@ -9,7 +9,7 @@ const Home = () => {
     <>
     <header>
       <div>
-      <h2 className='h2'>Hey Danyal 👋</h2>
+      <div className='h2'>Hey Danyal 👋</div>
       <p className='p'>It's dinner time!</p>
       </div>
       <FaSearch className='h2 hover'/>

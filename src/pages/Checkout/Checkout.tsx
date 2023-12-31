@@ -39,7 +39,7 @@ const CheckoutPage: React.FC = () => {
       </div>
 
       <div className="section">
-        <h2 className='h2 bold'>Payment</h2>
+        <div className='h2 bold'>Payment</div>
         <div className="payment-methods">
             {paymentMethods.map((method, index) => (
                 <div key={index} className="payment-method">
@@ -55,12 +55,12 @@ const CheckoutPage: React.FC = () => {
       </div>
 
       <div className="section">
-        <h2 className='h2 bold'>Delivery Details</h2>
+        <div className='h2 bold'>Delivery Details</div>
         <p className='font-color-secondary h3-2' style={{ whiteSpace: 'pre-line' }}>{address}</p>
       </div>
 
       <div className="section">
-        <h2 className='h2 bold'>Order Details</h2>
+        <div className='h2 bold'>Order Details</div>
         <div className="order-details ">
           {products.map((product) => (
             <div key={product.id}>
