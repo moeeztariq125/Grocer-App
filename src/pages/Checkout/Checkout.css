@@ -1,0 +1,90 @@
+/* CheckoutPage.css */
+
+.checkout-page {
+  padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  .header > div {
+    margin-right: 45vw;
+  }
+  @media only screen and (max-width: 700px)  {
+    .header > div{
+        margin-right: 25vw;
+    }
+  }
+  
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+  }
+/* Change from .payment-methods:nth-child(1) to .payment-methods .payment-method:first-child */
+.payment-methods .payment-method:first-child {
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+}
+.payment-methods .payment-method:last-child {
+  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+  
+  .payment-method {
+    padding-right: 20px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .payment-method input[type='radio'] {
+    /* Adjust the size as needed */
+    width: 20px;
+    height: 20px;
+    padding: 0;
+  }
+  .method {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    height: 100px;
+  }
+  .method > img {
+    transform: scale(0.5);
+  }
+  
+  .order-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content:flex-start;
+    gap: 30px;
+  }
+  
+  
+  .total-price {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
