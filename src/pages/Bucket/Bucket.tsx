@@ -12,12 +12,6 @@ interface Card {
   imageUrl: string;
 }
 
-interface BucketPageProps {
-  title: string;
-  // Use Card[] to represent an array of cards
-  cards: Card[];
-  totalPrice: number;
-}
 
 const BucketPage= () => {
   // Dummy data
