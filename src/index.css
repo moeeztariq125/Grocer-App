@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
 :root {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -17,4 +19,21 @@
   --font-color-secondary: #A1A1A1;
 }
 
-
+.h3{
+  font-size: var(--h3-font-size);
+}
+.h3-2{
+  font-size: var(--h3--font-size-2);
+}
+.h2{
+  font-size: var(--h2-font-size);
+}
+.h2-2{
+  font-size: var(--h2-font-size-2);
+}
+.p{
+  font-size: var(--p--font-size);
+}
+.span{
+  font-size: var(--span--font-size);
+}

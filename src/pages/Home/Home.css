@@ -1,0 +1,69 @@
+header>div{
+    display:flex;
+    flex-direction: column;
+}
+header>div>h2{
+    margin-bottom: 0px;
+}
+header>div>p{
+    margin-top: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Categories{
+    margin-top: 2rem;
+
+}
+
+.category__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.category__items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent wrapping to next line */
+}
+.category__items::-webkit-scrollbar {
+    display: none; /* WebKit browsers (Chrome, Safari, etc.) */
+  }
+@media only screen and (max-width: 1100px)  {
+    .category__items{
+        justify-content: stretch;
+    }
+}
+
+
+.Recommended{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.recommended__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Recommended__items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hover:hover{
+    transition: all 0.2s;
+    color: var(--highlight-color);
+  }
+
+.colored{
+    color: var(--highlight-color);
+}
