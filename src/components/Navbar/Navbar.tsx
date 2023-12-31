@@ -1,4 +1,3 @@
-import { useState, ReactNode  } from 'react';
 import { NavbarConstants, NavbarPaths } from '../../constants';
 import './Navbar.css';
 import { useLocation } from 'react-router-dom';
@@ -6,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
-  const [current, setCurrent] = useState('HOME');
   const location = useLocation()
   console.log(location.pathname)
   if(NavbarPaths.includes(location.pathname.split('/')[1])) {

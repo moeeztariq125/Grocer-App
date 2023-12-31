@@ -5,7 +5,7 @@ import { FaRegHeart } from "react-icons/fa6";
 import { CiCircleMinus, CiCirclePlus  } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 
-const ProductPage = ({ title='', subtitle='', rating='', image='', description='', price=10.2 }:props) => {
+const ProductPage = ({ title='',  price=10.2 }:props) => {
   const [quantity, setQuantity] = useState(1);
 
   const decreaseQuantity = () => {
