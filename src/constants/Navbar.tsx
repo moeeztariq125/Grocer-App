@@ -6,27 +6,27 @@ import { CgProfile } from "react-icons/cg";
 
 export default [
     {
-        ENUM:'HOME',
+        ENUM:'/',
         img: <FaHouse/>,
         highLighted:false
     },
     {
-        ENUM:'LIKES',
+        ENUM:'/',
         img:<FaRegHeart/>,
         highLighted:false
     },
     {
-        ENUM:'CART',
+        ENUM:'/bucket',
         img:<CiShoppingBasket/>,
         highLighted:true
     },
     {
-        ENUM:'TRENDS',
+        ENUM:'/',
         img:<PiTrendUpThin/>,
         highLighted:false
     },
     {
-        ENUM:'PROFILE',
+        ENUM:'/',
         img:<CgProfile/>,
         highLighted:false
     }

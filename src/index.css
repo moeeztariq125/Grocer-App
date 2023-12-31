@@ -55,3 +55,7 @@
 .highlight {
   color:var(--highlight-color)
 }
+.link-no-style {
+  text-decoration: none;
+  color: inherit;
+}

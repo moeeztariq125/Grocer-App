@@ -3,6 +3,7 @@
 import React from 'react';
 import { FaArrowLeft } from 'react-icons/fa6';
 import './Checkout.css'
+import { Link } from 'react-router-dom';
 
 interface Product {
   id: number;
@@ -33,7 +34,7 @@ const CheckoutPage: React.FC = () => {
   return (
     <div className="checkout-page">
       <div className="header h2 bold">
-      <FaArrowLeft className = 'hover'/>
+      <Link to={'/bucket'} className='link-no-style'><FaArrowLeft className = 'hover'/></Link>
         <div>Checkout</div>
       </div>
 
@@ -69,7 +70,7 @@ const CheckoutPage: React.FC = () => {
         </div>
         <div className="footer">
         <div className="total-price"><span className='h3'>Total</span> <span className='h2-2'>{totalPrice}<span className='highlight'> $</span></span></div>
-        <button className="checkout-button">Checkout</button>
+        <Link to={'/order-completion'} className='link-no-style'><button className="checkout-button">Checkout</button></Link>
       </div>
       </div>
     </div>

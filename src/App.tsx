@@ -5,6 +5,7 @@ import ProductPage from './pages/Product/Product';
 import Navbar from './components/Navbar/Navbar';
 import BucketPage from './pages/Bucket/Bucket';
 import CheckoutPage from './pages/Checkout/Checkout';
+import ReceiptPage from './pages/Receipt/Receipt';
 
 const App: React.FC = () => {
   return (
@@ -12,9 +13,10 @@ const App: React.FC = () => {
         <Navbar/>
         <Routes>
           <Route path='/'  element={<Home/>} />
-          <Route path="/product/:productId" element={<ProductPage/>} />
+          <Route path="/product" element={<ProductPage/>} />
           <Route path='/bucket' element={<BucketPage/>}/>
           <Route path='/checkout' element={<CheckoutPage/>}/>
+          <Route path='/order-completion' element={<ReceiptPage/>}/>
         </Routes>
     </Router>
   );

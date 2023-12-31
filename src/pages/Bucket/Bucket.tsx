@@ -2,6 +2,7 @@
 
 import { FaArrowLeft } from 'react-icons/fa6';
 import './Bucket.css'
+import { Link } from 'react-router-dom';
 
 interface Card {
   id: number;
@@ -66,7 +67,7 @@ const BucketPage= () => {
   return (
     <div className="bucket-page">
         <div className='header h2 bold'>
-          <FaArrowLeft className = 'hover'/>
+          <Link to={'/'} className='link-no-style'><FaArrowLeft className = 'hover'/></Link>
           <div>My Bucket</div>
         </div>
 
@@ -87,7 +88,7 @@ const BucketPage= () => {
 
       <div className="footer">
         <div className="total-price"><span className='h3'>Total</span> <span className='h2-2'>{totalPrice}<span className='highlight'> $</span></span></div>
-        <button className="checkout-button">Checkout</button>
+        <Link to={'/checkout'} className='link-no-style'><button className="checkout-button">Checkout</button></Link>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { useState, ReactNode  } from 'react';
 import { NavbarConstants, NavbarPaths } from '../../constants';
 import './Navbar.css';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -16,9 +17,11 @@ const Navbar = () => {
     <ul>
       {NavbarConstants.map((item, index) => {
         return (
+          <Link to={item.ENUM} className='link-no-style'>
           <li key={index}  className={item.highLighted==true?'highlighted':''}>
             {item.img}
           </li>
+          </Link>
         );
       })}
     </ul>

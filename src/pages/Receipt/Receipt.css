@@ -1,0 +1,45 @@
+/* OrderCompletionPage.css */
+
+.order-completion-page {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .arrow-header {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .arrow{
+    cursor: pointer;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    color: #27ae60; /* Green color, adjust as needed */
+  }
+  
+  .order-image {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  p {
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  
+
+  .return-home-button {
+    background-color: var(--highlight-color);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  

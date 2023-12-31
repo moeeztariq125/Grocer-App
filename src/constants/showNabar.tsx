@@ -1,5 +1,6 @@
 export default [
     'product',
     'bucket',
-    'checkout'
+    'checkout',
+    'order-completion'
 ]

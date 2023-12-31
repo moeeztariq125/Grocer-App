@@ -1,5 +1,6 @@
 import { FaRegHeart } from 'react-icons/fa6';
 import './Product.css';
+import { Link } from 'react-router-dom';
 
 interface ProductCardProps {
   img: string;
@@ -9,6 +10,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ img, description, price }) => {
   return (
+    <Link to={'/product'} className='link-no-style'>
     <div className="product-card">
       <div className="image-container">
         <img src={img} alt="Product" />
@@ -21,6 +23,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ img, description, price }) =>
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 

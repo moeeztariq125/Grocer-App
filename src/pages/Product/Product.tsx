@@ -3,8 +3,9 @@ import './Product.css'; // Make sure to have your styles in a separate CSS file
 import { FaArrowLeft } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa6";
 import { CiCircleMinus, CiCirclePlus  } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
-const ProductPage = ({ title='', subtitle='', rating='', image='', description='', price=0 }:props) => {
+const ProductPage = ({ title='', subtitle='', rating='', image='', description='', price=10.2 }:props) => {
   const [quantity, setQuantity] = useState(1);
 
   const decreaseQuantity = () => {
@@ -26,7 +27,7 @@ const ProductPage = ({ title='', subtitle='', rating='', image='', description='
     <div className='product_page'>
     <div className="product-container">
       <div className="header-icons h2 ">
-        <div><FaArrowLeft className = 'hover'/></div>
+        <Link to={'/'} className='link-no-style'><FaArrowLeft className = 'hover'/></Link>
         <div><FaRegHeart className = 'hover'/></div>
       </div>
 
@@ -51,7 +52,7 @@ const ProductPage = ({ title='', subtitle='', rating='', image='', description='
     </div>
     <div className="price-section">
         <div className="price">${(price * quantity).toFixed(2)}</div>
-        <button onClick={addToCart} className="add-to-cart-button">Add to Cart</button>
+        <Link to={'/'} className='link-no-style'><button onClick={addToCart} className="add-to-cart-button">Add to Cart</button></Link>
       </div>
 </div>
   );
