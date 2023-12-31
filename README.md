@@ -5,7 +5,9 @@ There is a folder for providers where you can introduce provider for minor state
 
 How to run:
 Clone the repo into your system.
+
 run: npm i
+
 run: npm run dev
 
 The app will start on you local host
