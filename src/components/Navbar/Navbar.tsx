@@ -1,15 +1,16 @@
 import { useState, ReactNode  } from 'react';
-import { NavbarConstants } from '../../constants';
+import { NavbarConstants, NavbarPaths } from '../../constants';
 import './Navbar.css';
+import { useLocation } from 'react-router-dom';
 
-interface NavbarProps {
-  children: ReactNode;
-}
 
-const Navbar:React.FC<NavbarProps> = ({children}) => {
+const Navbar = () => {
   const [current, setCurrent] = useState('HOME');
-
-  
+  const location = useLocation()
+  console.log(location.pathname)
+  if(NavbarPaths.includes(location.pathname.split('/')[1])) {
+    return null
+  }
   return (
     <>
     <ul>
@@ -21,7 +22,7 @@ const Navbar:React.FC<NavbarProps> = ({children}) => {
         );
       })}
     </ul>
-    {children}
+    {/* {children} */}
     </>
   );
 };
